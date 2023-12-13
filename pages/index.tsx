@@ -1,10 +1,24 @@
 import { Card, Image, Text, Badge, Button, Group, Grid } from '@mantine/core';
+import { ActionIcon, useMantineColorScheme, useComputedColorScheme } from '@mantine/core';
+import { IconSun, IconMoon } from '@tabler/icons-react';
+import cx from 'clsx';
+import classes from './DarkMode.module.css';
 
 export default function IndexPage() {
+  const { setColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true });
   return (
     <Group mt={50} justify="center">
       <Grid>
         <Grid.Col span={{ base: 12, md: 6, lg: 3 }}>
+          <ActionIcon
+            onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')}
+            variant="default"
+            size="xl"
+            aria-label="Toggle color scheme">
+            <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />
+            <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
+          </ActionIcon>
           <Button variant="default">Cover Art</Button>
           <Card shadow="sm" padding="lg" radius="md" withBorder>
             <Card.Section>

@@ -11,9 +11,11 @@
   "dependencies": {
     "@mantine/core": "7.3.1",
     "@mantine/hooks": "7.3.1",
+    "@tabler/icons-react": "^2.44.0",
     "next": "14.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tabler-icons-react": "^1.56.0"
   },
   "devDependencies": {
     "@types/node": "20.8.10",
@@ -22,7 +24,7 @@
     "eslint": "8.53.0",
     "eslint-config-next": "14.0.1",
     "postcss": "^8.4.31",
-    "postcss-preset-mantine": "1.11.1",
+    "postcss-preset-mantine": "^1.11.1",
     "postcss-simple-vars": "^7.0.1",
     "typescript": "5.2.2"
   },
