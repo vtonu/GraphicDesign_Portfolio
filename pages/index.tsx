@@ -20,7 +20,7 @@ export default function IndexPage() {
             <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
           </ActionIcon>
           <Group mb="xs" mt="xs">
-            <Button variant="default">Cover Art</Button>
+            <Button variant="default">Album Cover Art</Button>
           </Group>
           <Card shadow="sm" padding="md" radius="md" withBorder>
             <Card.Section>
@@ -28,36 +28,73 @@ export default function IndexPage() {
             </Card.Section>
 
             <Group justify="space-between" mt="md" mb="xs">
-              <Text fw={500}>Norway Fjord Adventures</Text>
-              <Badge color="pink">Limited</Badge>
+              <Text fw={500}>Business Talk Album Cover</Text>
+              <Badge color="green">NEW</Badge>
             </Group>
 
             <Text size="sm" c="dimmed">
-              With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-              activities on and around the fjords of Norway
+              One of my best instrumental albums. The cover art aesthetics reflects the beats'
+              style. It contains some of my oldest beats that sound raw. Art was done in Photoshop.
             </Text>
 
-            <Button color="blue" fullWidth mt="md" radius="md">
-              Book classic tour now
+            <Button
+              component="a"
+              href="https://youtu.be/cDOIXBE-AB8?list=PL_IwdIISBVJoiNegAnEgN5EKS4Nq5lUVT"
+              target="_blank"
+              color="green"
+              fullWidth
+              mt="md"
+              radius="md">
+              Listen on YouTube
             </Button>
           </Card>
         </Grid.Col>
         <Grid.Col span={{ base: 10, md: 6, lg: 3 }}>
           <Group mb="xs" mt="xs">
-            <Button variant="default">Logos</Button>
+            <Button variant="default">Logo & Brand</Button>
+          </Group>
+          <Card shadow="sm" padding="md" radius="md" withBorder>
+            <Card.Section>
+              <Image src="https://i.postimg.cc/3wMtTJQb/download.png" height={160} alt="Norway" />
+            </Card.Section>
+
+            <Group justify="space-between" mt="md" mb="xs">
+              <Text fw={500}>Ever Happened</Text>
+              {/* <Badge color="pink">On Sale</Badge> */}
+            </Group>
+
+            <Text size="sm" c="dimmed">
+              Official Ever Happened logo & website for my music brand.
+            </Text>
+
+            <Button
+              component="a"
+              href="https://www.happenedmusic.com/"
+              target="_blank"
+              color="green"
+              fullWidth
+              mt="md"
+              radius="md">
+              See More
+            </Button>
+          </Card>
+        </Grid.Col>
+        <Grid.Col span={{ base: 10, md: 6, lg: 3 }}>
+          <Group mb="xs" mt="xs">
+            <Button variant="default">Loop Kit Covers</Button>
           </Group>
           <Card shadow="sm" padding="md" radius="md" withBorder>
             <Card.Section>
               <Image
-                src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
+                src="https://static.wixstatic.com/media/ac851e_88b2d1a6041f49048d1a198dd6b925c1~mv2.jpg/v1/fill/w_500,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ac851e_88b2d1a6041f49048d1a198dd6b925c1~mv2.jpg"
                 height={160}
                 alt="Norway"
               />
             </Card.Section>
 
             <Group justify="space-between" mt="md" mb="xs">
-              <Text fw={500}>Norway Fjord Adventures</Text>
-              <Badge color="pink">On Sale</Badge>
+              <Text fw={500}>Loop Kit Cover Art - Emotions</Text>
+              {/* <Badge color="pink">On Sale</Badge> */}
             </Group>
 
             <Text size="sm" c="dimmed">
@@ -65,8 +102,15 @@ export default function IndexPage() {
               activities on and around the fjords of Norway
             </Text>
 
-            <Button color="blue" fullWidth mt="md" radius="md">
-              Book classic tour now
+            <Button
+              component="a"
+              href="https://www.happenedmusic.com/product-page/lots-of-emotions-loop-kit"
+              target="_blank"
+              color="green"
+              fullWidth
+              mt="md"
+              radius="md">
+              See More
             </Button>
           </Card>
         </Grid.Col>
@@ -76,53 +120,27 @@ export default function IndexPage() {
           </Group>
           <Card shadow="sm" padding="md" radius="md" withBorder>
             <Card.Section>
-              <Image
-                src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                height={160}
-                alt="Norway"
-              />
+              <Image src="https://i.postimg.cc/Bvq1DdTn/download.png" height={160} alt="Norway" />
             </Card.Section>
 
             <Group justify="space-between" mt="md" mb="xs">
-              <Text fw={500}>Norway Fjord Adventures</Text>
-              <Badge color="pink">On Sale</Badge>
+              <Text fw={500}>"Never Quit Drawing"</Text>
+              {/* <Badge color="pink">On Sale</Badge> */}
             </Group>
 
             <Text size="sm" c="dimmed">
-              With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-              activities on and around the fjords of Norway
+              Ink pen art when I was 14. I quit drawing for a while after this one.
             </Text>
 
-            <Button color="blue" fullWidth mt="md" radius="md">
-              Book classic tour now
-            </Button>
-          </Card>
-        </Grid.Col>
-        <Grid.Col span={{ base: 10, md: 6, lg: 3 }}>
-          <Group mb="xs" mt="xs">
-            <Button variant="default">Illustrations</Button>
-          </Group>
-          <Card shadow="sm" padding="md" radius="md" withBorder>
-            <Card.Section>
-              <Image
-                src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png"
-                height={160}
-                alt="Norway"
-              />
-            </Card.Section>
-
-            <Group justify="space-between" mt="md" mb="xs">
-              <Text fw={500}>Norway Fjord Adventures</Text>
-              <Badge color="pink">On Sale</Badge>
-            </Group>
-
-            <Text size="sm" c="dimmed">
-              With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-              activities on and around the fjords of Norway
-            </Text>
-
-            <Button color="blue" fullWidth mt="md" radius="md">
-              Book classic tour now
+            <Button
+              component="a"
+              href="https://victortonu.myportfolio.com/drawings"
+              target="_blank"
+              color="black"
+              fullWidth
+              mt="md"
+              radius="md">
+              See More
             </Button>
           </Card>
         </Grid.Col>
