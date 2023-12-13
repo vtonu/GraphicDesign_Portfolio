@@ -1,4 +1,4 @@
-Intro to Maya Project
+Mantine + Next.js Portfolio.
 
 ![image](https://github.com/vtonu/GraphicDesign_Portfolio/assets/56773210/eff1f72c-31d8-4cb3-9984-d97a008b00aa)
 
