@@ -3,6 +3,7 @@ import { ActionIcon, useMantineColorScheme, useComputedColorScheme } from '@mant
 import { IconSun, IconMoon, IconBrandGithub } from '@tabler/icons-react';
 import cx from 'clsx';
 import classes from './DarkMode.module.css';
+import { Carousel } from '@mantine/carousel';
 
 export default function IndexPage() {
   const { setColorScheme } = useMantineColorScheme();
@@ -42,7 +43,7 @@ export default function IndexPage() {
             </Group>
 
             <Text size="sm" c="dimmed">
-              Website was made using Adobe Portfolio.
+              Website made using Adobe Portfolio.
             </Text>
 
             <Button
@@ -84,7 +85,7 @@ export default function IndexPage() {
               component="a"
               href="https://nuxt-ui-maya.vercel.app/"
               target="_blank"
-              color="green"
+              color="red"
               fullWidth
               mt="md"
               radius="md">
@@ -146,7 +147,7 @@ export default function IndexPage() {
             </Group>
 
             <Text size="sm" c="dimmed">
-              Itch.io page which has all my games and projects from my college classes.
+              Itch.io page which contains all games from my college classes.
             </Text>
 
             <Button
@@ -154,6 +155,34 @@ export default function IndexPage() {
               href="https://vtonu.itch.io/"
               target="_blank"
               color="green"
+              fullWidth
+              mt="md"
+              radius="md">
+              See More
+            </Button>
+          </Card>
+          <Card shadow="sm" padding="md" radius="md" withBorder mt="md">
+            <Group mb="xs" mt="xs">
+              <Button variant="default">Project 5</Button>
+            </Group>
+            <Card.Section>
+              <Image src="https://i.postimg.cc/xTzQXf6Q/download.png" height={160} alt="Norway" />
+            </Card.Section>
+
+            <Group justify="space-between" mt="md" mb="xs">
+              <Text fw={500}>Math Relationship</Text>
+              {/* <Badge color="pink">On Sale</Badge> */}
+            </Group>
+
+            <Text size="sm" c="dimmed">
+              A simple HTML, CSS, JS Project for my Math Class.
+            </Text>
+
+            <Button
+              component="a"
+              href="https://github.com/vtonu/MathRelationship_2"
+              target="_blank"
+              color="red"
               fullWidth
               mt="md"
               radius="md">
