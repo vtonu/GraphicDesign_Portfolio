@@ -10,8 +10,8 @@ export default function IndexPage() {
   const computedColorScheme = useComputedColorScheme('light', { getInitialValueInEffect: true });
   return (
     <Group p="lg" justify="center">
-      <Grid justify="center" align="center">
-        <Card shadow="xs" padding="md" radius="md" withBorder>
+      <Grid justify="center" align="flex-start">
+        <Card shadow="xs" padding="md" radius="md" withBorder mb="xs">
           <Group mb="xs" justify="center" align="center">
             <ActionIcon
               onClick={() => setColorScheme(computedColorScheme === 'light' ? 'dark' : 'light')}
@@ -21,43 +21,27 @@ export default function IndexPage() {
               <IconSun className={cx(classes.icon, classes.light)} stroke={1.5} />
               <IconMoon className={cx(classes.icon, classes.dark)} stroke={1.5} />
             </ActionIcon>
-            <Button variant="default">React Project</Button>
+            <Button variant="default">Portfolio Project</Button>
             <ActionIcon
               variant="default"
               size="lg"
               aria-label="Toggle color scheme"
               component="a"
-              href="https://github.com/vtonu/ShadCN_UI"
+              href="https://github.com/vtonu"
               target="_blank">
               <IconBrandGithub></IconBrandGithub>
             </ActionIcon>
           </Group>
-          <Card.Section>
-            <Image src="https://i.postimg.cc/SR84jrQh/download.png" height={300} alt="Project 1" />
-          </Card.Section>
-
-          <Group justify="space-between" mt="md" mb="xs">
-            <Text fw={500}>Graphic Design Portfolio</Text>
-            {/* <Badge color="green">NEW</Badge> */}
-          </Group>
-
-          <Text size="sm" c="dimmed">
-            A ShadCN Project using React, NextJS, Radix & TailwindCSS.
-          </Text>
-
-          <Button
-            component="a"
-            href="https://shad-cn-ui.vercel.app/"
-            target="_blank"
-            variant="default"
-            fullWidth
-            mt="md"
-            radius="md">
-            See More
-          </Button>
+        </Card>
+        <Card
+          shadow="xs"
+          padding="md"
+          radius="md"
+          withBorder
+          style={{ width: '50%', height: '50%' }}>
+          <CardsCarousel></CardsCarousel>
         </Card>
       </Grid>
-      <CardsCarousel></CardsCarousel>
     </Group>
   );
 }
