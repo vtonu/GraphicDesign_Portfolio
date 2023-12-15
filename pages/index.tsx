@@ -3,6 +3,7 @@ import { ActionIcon, useMantineColorScheme, useComputedColorScheme } from '@mant
 import { IconSun, IconMoon, IconBrandGithub } from '@tabler/icons-react';
 import cx from 'clsx';
 import classes from './DarkMode.module.css';
+import { CardsCarousel } from './CardsCarousel';
 
 export default function IndexPage() {
   const { setColorScheme } = useMantineColorScheme();
@@ -56,6 +57,7 @@ export default function IndexPage() {
           </Button>
         </Card>
       </Grid>
+      <CardsCarousel></CardsCarousel>
     </Group>
   );
 }
