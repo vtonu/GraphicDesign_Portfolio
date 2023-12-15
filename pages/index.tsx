@@ -33,15 +33,10 @@ export default function IndexPage() {
             </ActionIcon>
           </Group>
         </Card>
-        <Card
-          shadow="xs"
-          padding="md"
-          radius="md"
-          withBorder
-          style={{ width: '50%', height: '50%' }}>
-          <CardsCarousel></CardsCarousel>
-        </Card>
       </Grid>
+      <Card shadow="xs" padding="md" radius="md" withBorder style={{ width: '50%', height: '50%' }}>
+        <CardsCarousel></CardsCarousel>
+      </Card>
     </Group>
   );
 }
