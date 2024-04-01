@@ -1,4 +1,4 @@
-import { Card, Text, Button, Group, Flex } from '@mantine/core';
+import { Card, Text, Button, Group, Flex, Badge } from '@mantine/core';
 import { ActionIcon, useMantineColorScheme, useComputedColorScheme } from '@mantine/core';
 import { IconSun, IconMoon, IconBrandGithub } from '@tabler/icons-react';
 import cx from 'clsx';
@@ -6,6 +6,7 @@ import classes from './DarkMode.module.css';
 import { CardsCarousel } from './CardsCarousel';
 import { Blockquote } from '@mantine/core';
 import { IconInfoCircle } from '@tabler/icons-react';
+import { BadgeCard } from './BadgeCard';
 
 export default function IndexPage() {
   const { setColorScheme } = useMantineColorScheme();
@@ -43,7 +44,7 @@ export default function IndexPage() {
             </ActionIcon>
           </Group>
           <Text mt="sm" c="dimmed" size="sm">
-            A Mantine Project using React, NextJS and Tabler Icons.
+            A Minimal Mantine Project using React, NextJS and Tabler Icons.
           </Text>
         </Card>
         <Card
@@ -58,6 +59,25 @@ export default function IndexPage() {
           Minimalism is the future: why clutter your life with things when you can clutter it with
           apps?
         </Blockquote>
+        <div style={{ padding: '2rem' }}>
+          <Card
+            withBorder
+            radius="md"
+            padding="md"
+            bg="var(--mantine-color-body)"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              flexDirection: 'row',
+              gap: '0.5rem',
+            }}>
+            Powered by{' '}
+            <Badge variant="gradient" size="sm" gradient={{ from: 'dark', to: 'black' }}>
+              Vercel
+            </Badge>
+          </Card>
+        </div>
       </Flex>
     </Group>
   );
